@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n1,n2,sum = 0;
+  
+	cout << " Enter start number: ";
+	cin >> n1;
+	cout << " Enter stop number: ";
+	cin >> n2;
+  
+	for(int n = 1 ; n <= n2 ; n++ )
+	{ cout << n1 << " * " << n << " = " << n1*n <<endl;
+	sum = sum+(n1*n);
+	}
+	cout<< "sum = " << sum <<endl; 
+  
+  return 0;
+}
