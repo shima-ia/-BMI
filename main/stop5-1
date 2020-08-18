@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	int count = 0,L = 0,U = 0,N = 0,S = 0;
+	cout << "Input string: ";
+	while(cin >> ch)
+	{	cout << ch <<endl;
+		count++;
+		if(ch >= 'a' && ch <= 'z') L++;
+		else if(ch >= 'A' && ch <= 'z') U++;
+		else if(ch >= '0' && ch <= '9') N++;
+		else S++;
+		if(count == 5) break; //if(ch == '.') break; //เปลี่ยนตัวแปรที่ต้องการให้หยุด
+	}
+	cout << "Your message have " << L << " lower character." <<endl;
+	cout << "Your message have " << U << " upper character." <<endl;
+	cout << "Your message have " << N << " numeric character." <<endl;
+	cout << "Your message have " << S << " special character." <<endl;
+  
+	return 0;
+}
